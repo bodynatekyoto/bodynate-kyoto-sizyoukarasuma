@@ -1,0 +1,3426 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Body Nate 神戸三宮｜理学療法士が診る、3ヶ月集中ボディメイク</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@700;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: #fafaf7;
+      color: #1a2e1f;
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.8;
+      font-size: 15px;
+      padding-bottom: 90px;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    :root {
+      --green: #5fa078;
+      --green-dark: #45855b;
+      --green-deep: #326c4a;
+      --green-light: #bee4cc;
+      --green-pale: #eef7f2;
+      --gold: #d4b56a;
+      --gold-light: #eedfa8;
+      --white: #ffffff;
+      --cream: #fcfcf9;
+      --text: #2c4033;
+      --text-light: #72907d;
+      --red: #c4474b;
+      --line-green: #06c755;
+    }
+
+    /* ========================================
+       TOP ANNOUNCEMENT BAR
+       ======================================== */
+    .top-announce {
+      background: linear-gradient(90deg, var(--red), #d85a5e, var(--red));
+      color: #fff;
+      text-align: center;
+      padding: 8px 10px;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    }
+    .top-announce .em {
+      color: var(--gold-light);
+      font-size: 13px;
+    }
+
+    /* ========================================
+       共通: CTA（3つボタンセット）
+       ======================================== */
+    .cta-triple {
+      padding: 28px 20px 32px;
+      text-align: center;
+      background: transparent;
+    }
+    .cta-triple.on-dark {
+      background: var(--green-deep);
+    }
+    .cta-triple .sub-label {
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: var(--green);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .cta-triple.on-dark .sub-label {
+      color: var(--gold);
+    }
+    .cta-triple .title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--text);
+      margin-bottom: 18px;
+      line-height: 1.5;
+    }
+    .cta-triple.on-dark .title {
+      color: #fff;
+    }
+    .cta-triple .title .gold { color: var(--gold); }
+    .cta-btn-main {
+      display: block;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light), var(--gold));
+      color: var(--green-deep);
+      font-weight: 900;
+      font-size: 16px;
+      padding: 20px 14px;
+      border-radius: 100px;
+      text-align: center;
+      letter-spacing: 0.5px;
+      box-shadow: 0 8px 22px rgba(201,169,97,0.45);
+      margin-bottom: 10px;
+      position: relative;
+    }
+    .cta-btn-main::after {
+      content: '▶';
+      position: absolute;
+      right: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 12px;
+    }
+    .cta-btn-main .price {
+      display: block;
+      font-size: 11px;
+      opacity: 0.85;
+      margin-top: 2px;
+      font-weight: 700;
+    }
+    .cta-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .cta-btn-sub {
+      display: block;
+      padding: 15px 8px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 900;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+    .cta-btn-line {
+      background: var(--line-green);
+      color: #fff;
+      box-shadow: 0 4px 14px rgba(6,199,85,0.35);
+    }
+    .cta-btn-instant {
+      background: #fff;
+      color: var(--green-deep);
+      border: 2px solid var(--green);
+      box-shadow: 0 4px 14px rgba(74,124,89,0.2);
+    }
+    .cta-triple.on-dark .cta-btn-instant {
+      background: transparent;
+      color: #fff;
+      border-color: var(--green-light);
+    }
+    .cta-note {
+      text-align: center;
+      font-size: 11px;
+      color: var(--text-light);
+      margin-top: 12px;
+    }
+    .cta-triple.on-dark .cta-note {
+      color: rgba(255,255,255,0.55);
+    }
+    .cta-note .em { color: var(--red); font-weight: 700; }
+    .cta-triple.on-dark .cta-note .em { color: var(--gold); }
+
+    /* ========================================
+       SECTION 1: HERO（ラグジュアリー・ダーク）
+       ======================================== */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes shimmer {
+      0%, 100% { background-position: 0% center; }
+      50% { background-position: 100% center; }
+    }
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 10px 30px rgba(201,169,97,0.45), 0 0 0 0 rgba(201,169,97,0.4); }
+      50% { box-shadow: 0 10px 30px rgba(201,169,97,0.55), 0 0 0 12px rgba(201,169,97,0); }
+    }
+
+    .fv {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at top, #6aab7e 0%, #4d8c62 50%, #3a7a55 100%);
+    }
+    .fv::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 2px 2px, rgba(201,169,97,0.08) 1px, transparent 0);
+      background-size: 24px 24px;
+      z-index: 1;
+      pointer-events: none;
+    }
+    .fv::after {
+      content: '';
+      position: absolute;
+      top: 20%;
+      right: -20%;
+      width: 80%;
+      height: 60%;
+      background: radial-gradient(ellipse, rgba(201,169,97,0.12), transparent 60%);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    /* 写真エリア */
+    .fv-photo {
+      position: relative;
+      height: 480px;
+      overflow: hidden;
+      z-index: 2;
+    }
+    .fv-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 25%;
+      filter: saturate(1.05) contrast(1.08) brightness(0.95);
+      animation: fadeIn 1.2s ease-out;
+    }
+    .fv-photo::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg,
+          rgba(42,94,64,0.35) 0%,
+          rgba(42,94,64,0.05) 25%,
+          rgba(42,94,64,0.05) 55%,
+          rgba(45,95,63,0.85) 92%,
+          #4d8c62 100%);
+    }
+    .fv-photo-border {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg,
+        transparent 0%,
+        var(--gold) 20%,
+        var(--gold-light) 50%,
+        var(--gold) 80%,
+        transparent 100%);
+      z-index: 5;
+      box-shadow: 0 0 20px rgba(201,169,97,0.6);
+    }
+
+    /* 左上装飾ドット */
+    .fv-dots {
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      display: flex;
+      gap: 8px;
+      z-index: 6;
+      animation: fadeIn 1.5s ease-out 0.3s backwards;
+    }
+    .fv-dots span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(201,169,97,0.6);
+    }
+    .fv-dots span:nth-child(1) { background: var(--gold); }
+    .fv-dots span:nth-child(2) { background: rgba(255,255,255,0.8); }
+    .fv-dots span:nth-child(3) { background: var(--green-light); }
+
+    /* 縦書きテキスト */
+    .fv-vertical {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      writing-mode: vertical-rl;
+      font-family: 'Noto Serif JP', serif;
+      font-size: 10px;
+      color: #fff;
+      letter-spacing: 5px;
+      font-weight: 700;
+      z-index: 6;
+      padding: 10px 5px 10px 8px;
+      background: rgba(58,122,85,0.8);
+      border-right: 2px solid var(--gold);
+      border-radius: 4px 0 0 4px;
+      animation: fadeIn 1.5s ease-out 0.4s backwards;
+      text-shadow: none;
+    }
+    .fv-vertical::before {
+      content: '✦';
+      display: block;
+      color: var(--gold);
+      margin-bottom: 8px;
+      font-size: 10px;
+    }
+
+    /* 斜めリボン */
+    .fv-ribbon {
+      position: absolute;
+      top: 60px;
+      left: -60px;
+      background: linear-gradient(90deg, #b8943e, var(--gold), var(--gold-light), var(--gold), #b8943e);
+      background-size: 200% 100%;
+      color: var(--green-deep);
+      padding: 9px 80px;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      transform: rotate(-6deg);
+      z-index: 7;
+      box-shadow:
+        0 8px 24px rgba(0,0,0,0.5),
+        inset 0 1px 0 rgba(255,255,255,0.5),
+        inset 0 -1px 0 rgba(0,0,0,0.15);
+      white-space: nowrap;
+      animation: shimmer 4s ease-in-out infinite, fadeIn 1s ease-out 0.2s backwards;
+    }
+    .fv-ribbon::before, .fv-ribbon::after {
+      content: '◆';
+      margin: 0 8px;
+      font-size: 9px;
+    }
+
+    /* スタンプ */
+    .fv-stamp {
+      position: absolute;
+      top: 140px;
+      right: 20px;
+      width: 92px;
+      height: 92px;
+      z-index: 7;
+      animation: fadeIn 1s ease-out 0.5s backwards;
+    }
+    .fv-stamp-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #faf7f0 0%, #f0e6c8 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transform: rotate(8deg);
+      border: 2px solid var(--gold);
+      box-shadow:
+        0 10px 30px rgba(0,0,0,0.5),
+        inset 0 0 0 4px rgba(250,247,240,0.8),
+        inset 0 0 0 5px var(--gold);
+      position: relative;
+    }
+    .fv-stamp-inner::before {
+      content: '';
+      position: absolute;
+      inset: 8px;
+      border-radius: 50%;
+      border: 1px dashed rgba(139,111,58,0.4);
+    }
+    .fv-stamp-top {
+      font-size: 7px;
+      color: #8b6f3a;
+      letter-spacing: 1.5px;
+      font-weight: 900;
+    }
+    .fv-stamp-star {
+      color: var(--gold);
+      font-size: 9px;
+      margin: 1px 0;
+    }
+    .fv-stamp-main {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 13px;
+      font-weight: 900;
+      color: var(--green-deep);
+      line-height: 1.1;
+      margin: 2px 0;
+    }
+    .fv-stamp-bottom {
+      font-size: 7px;
+      color: #8b6f3a;
+      letter-spacing: 1.5px;
+      font-weight: 700;
+    }
+
+    /* 写真上大タイトル */
+    .fv-title-overlay {
+      position: absolute;
+      bottom: 40px;
+      left: 24px;
+      right: 24px;
+      z-index: 6;
+      animation: fadeUp 1s ease-out 0.6s backwards;
+    }
+    .fv-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 12px 5px 10px;
+      background: linear-gradient(90deg, rgba(201,169,97,0.95), rgba(201,169,97,0.7));
+      color: var(--green-deep);
+      font-size: 10px;
+      letter-spacing: 3px;
+      font-weight: 900;
+      margin-bottom: 14px;
+      border-left: 3px solid #fff;
+    }
+    .fv-eyebrow::before {
+      content: '✦';
+      color: #fff;
+      font-size: 9px;
+    }
+    .fv-title-main {
+      font-family: 'Noto Serif JP', serif;
+      color: #fff;
+      font-size: 32px;
+      line-height: 1.3;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      text-shadow:
+        0 6px 24px rgba(0,0,0,0.85),
+        0 2px 6px rgba(0,0,0,0.7);
+    }
+    .fv-title-main .small {
+      display: block;
+      font-size: 14px;
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    .fv-title-main .emph {
+      color: var(--gold);
+      position: relative;
+      display: inline-block;
+    }
+    .fv-title-main .emph::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light), transparent);
+      box-shadow: 0 2px 10px rgba(201,169,97,0.6);
+    }
+
+    /* コンテンツエリア */
+    .fv-content {
+      position: relative;
+      padding: 24px 20px 44px;
+      z-index: 3;
+      background: linear-gradient(180deg, #2d6345 0%, #3d7a54 60%, #2d6345 100%);
+    }
+
+    /* 装飾区切り */
+    .fv-divider {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 22px;
+      animation: fadeIn 1s ease-out 0.8s backwards;
+    }
+    .fv-divider::before, .fv-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,169,97,0.7), transparent);
+    }
+    .fv-divider-diamond {
+      width: 8px;
+      height: 8px;
+      background: var(--gold);
+      transform: rotate(45deg);
+      box-shadow: 0 0 12px rgba(201,169,97,0.8);
+    }
+    .fv-divider-label {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 11px;
+      letter-spacing: 4px;
+      color: var(--gold);
+      font-weight: 700;
+      padding: 0 6px;
+    }
+
+    /* メインメッセージ */
+    .fv-message {
+      text-align: center;
+      margin-bottom: 36px;
+      animation: fadeUp 1s ease-out 0.9s backwards;
+    }
+    .fv-message-title {
+      font-family: 'Noto Serif JP', serif;
+      color: #fff;
+      font-size: 26px;
+      font-weight: 900;
+      line-height: 1.5;
+      margin-bottom: 14px;
+      letter-spacing: -0.5px;
+    }
+    .fv-message-title .gold { color: var(--gold); }
+    .fv-message-desc {
+      color: rgba(255,255,255,0.78);
+      font-size: 12px;
+      line-height: 2;
+    }
+    .fv-message-desc strong {
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    /* 3つの円ポイント（丸・ダーク版） */
+    .fv-circles {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 28px;
+      padding: 8px 0 16px;
+      animation: fadeUp 1s ease-out 1s backwards;
+    }
+    .fv-circle {
+      width: 118px;
+      height: 118px;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle, rgba(201,169,97,0.15) 0%, rgba(42,94,64,0.55) 70%),
+        linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.04));
+      border: 2px solid var(--gold);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 6px;
+      box-shadow:
+        0 8px 24px rgba(0,0,0,0.35),
+        inset 0 0 20px rgba(201,169,97,0.1);
+      position: relative;
+      flex-shrink: 0;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .fv-circle::before {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--green-deep);
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      font-size: 13px;
+      font-weight: 900;
+      font-family: 'Noto Serif JP', serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #3a7a55;
+      box-shadow: 0 4px 12px rgba(201,169,97,0.5);
+    }
+    .fv-circle:nth-child(1)::before { content: '1'; }
+    .fv-circle:nth-child(2)::before { content: '2'; }
+    .fv-circle:nth-child(3)::before { content: '3'; }
+    .fv-circle .icon {
+      font-size: 18px;
+      margin-top: 4px;
+    }
+    .fv-circle .main {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 12px;
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.35;
+      margin: 3px 0 2px;
+    }
+    .fv-circle .main .big {
+      display: block;
+      color: var(--gold);
+      font-size: 15px;
+      margin-top: 2px;
+    }
+    .fv-circle .sub {
+      font-size: 8px;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.3;
+      letter-spacing: 0.2px;
+    }
+
+    /* CTAエリア */
+    .fv-cta-wrap {
+      animation: fadeUp 1s ease-out 1.1s backwards;
+    }
+    .fv-cta-main {
+      display: block;
+      background:
+        linear-gradient(135deg, #c9a961 0%, #e8d5a0 25%, #faf0d0 50%, #e8d5a0 75%, #c9a961 100%);
+      background-size: 200% 100%;
+      color: var(--green-deep);
+      font-weight: 900;
+      font-size: 17px;
+      padding: 24px 16px;
+      border-radius: 4px;
+      text-align: center;
+      letter-spacing: 0.5px;
+      position: relative;
+      margin-bottom: 14px;
+      box-shadow:
+        0 12px 32px rgba(201,169,97,0.45),
+        inset 0 2px 0 rgba(255,255,255,0.7),
+        inset 0 -2px 0 rgba(139,111,58,0.2);
+      border: 1px solid rgba(255,255,255,0.4);
+      animation: pulse-glow 2.5s ease-in-out infinite;
+      overflow: hidden;
+    }
+    .fv-cta-main::before {
+      content: '';
+      position: absolute;
+      top: 5px; left: 5px; right: 5px; bottom: 5px;
+      border: 1px solid rgba(255,255,255,0.4);
+      border-radius: 2px;
+      pointer-events: none;
+    }
+    .fv-cta-main::after {
+      content: '▶';
+      position: absolute;
+      right: 26px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 13px;
+      color: var(--green-deep);
+    }
+    .fv-cta-main .main-text {
+      display: block;
+      font-size: 17px;
+    }
+    .fv-cta-main .price {
+      display: block;
+      font-size: 10px;
+      margin-top: 3px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      opacity: 0.85;
+    }
+    .fv-cta-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .fv-cta-line, .fv-cta-instant {
+      padding: 15px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 900;
+      text-align: center;
+      letter-spacing: 0.3px;
+    }
+    .fv-cta-line {
+      background: var(--line-green);
+      color: #fff;
+      box-shadow: 0 6px 18px rgba(6,199,85,0.35);
+    }
+    .fv-cta-line::before {
+      content: 'L';
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background: #fff;
+      color: var(--line-green);
+      border-radius: 3px;
+      font-size: 10px;
+      line-height: 16px;
+      margin-right: 5px;
+      font-family: serif;
+      font-weight: 900;
+    }
+    .fv-cta-instant {
+      background: transparent;
+      color: #fff;
+      border: 1px solid rgba(201,169,97,0.5);
+    }
+    .fv-cta-note {
+      text-align: center;
+      font-size: 10px;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 1px;
+    }
+    .fv-cta-note .em {
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    /* ========================================
+       SECTION: 初回体験バナー
+       ======================================== */
+    .trial-banner {
+      background: linear-gradient(135deg, var(--red), #a83a3f);
+      color: #fff;
+      padding: 24px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .trial-banner::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 160px;
+      height: 160px;
+      background: radial-gradient(circle, rgba(255,255,255,0.15), transparent);
+      border-radius: 50%;
+    }
+    .trial-banner-label {
+      font-size: 10px;
+      letter-spacing: 4px;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 8px;
+    }
+    .trial-banner-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 22px;
+      font-weight: 900;
+      line-height: 1.5;
+      margin-bottom: 14px;
+    }
+    .trial-banner-title .big {
+      color: var(--gold-light);
+      font-size: 28px;
+    }
+    .trial-price {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 14px;
+      padding: 16px 24px;
+      background: rgba(255,255,255,0.12);
+      border: 1px dashed rgba(255,255,255,0.4);
+      border-radius: 12px;
+      margin: 6px 0 14px;
+    }
+    .trial-price-old {
+      font-size: 14px;
+      text-decoration: line-through;
+      opacity: 0.7;
+    }
+    .trial-price-arrow {
+      font-size: 14px;
+      color: var(--gold-light);
+    }
+    .trial-price-new {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--gold-light);
+      line-height: 1;
+    }
+    .trial-price-new .tax {
+      font-size: 11px;
+      opacity: 0.8;
+    }
+    .trial-banner-note {
+      font-size: 11px;
+      opacity: 0.9;
+      letter-spacing: 1px;
+    }
+
+    /* ========================================
+       共通: セクションタイトル
+       ======================================== */
+    .sec-title {
+      text-align: center;
+      padding: 32px 20px 18px;
+    }
+    .sec-label {
+      display: inline-block;
+      font-size: 11px;
+      letter-spacing: 4px;
+      color: var(--green);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .sec-label::before, .sec-label::after {
+      content: '';
+      display: inline-block;
+      width: 30px;
+      height: 1px;
+      background: var(--green);
+      vertical-align: middle;
+      margin: 0 10px;
+    }
+    .sec-heading {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 26px;
+      font-weight: 900;
+      line-height: 1.5;
+      color: var(--text);
+    }
+    .sec-heading .accent { color: var(--green); }
+    .sec-heading .gold { color: var(--gold); }
+    .sec-title.on-dark .sec-label { color: var(--gold); }
+    .sec-title.on-dark .sec-heading { color: #fff; }
+
+    /* ========================================
+       SECTION: 信頼バッジ
+       ======================================== */
+    .trust {
+      background: var(--green-pale);
+      padding: 12px 14px 6px;
+    }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px;
+    }
+    .trust-item {
+      background: #fff;
+      padding: 12px 6px 10px;
+      border-radius: 10px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(58,122,85,0.06);
+    }
+    .trust-item::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--green), var(--gold));
+    }
+    .trust-icon {
+      font-size: 14px;
+      margin-bottom: 4px;
+      display: block;
+    }
+    .trust-num {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--green-dark);
+      line-height: 1.1;
+    }
+    .trust-num .unit { font-size: 11px; color: var(--text-light); font-weight: 700; }
+    .trust-label {
+      font-size: 9px;
+      color: var(--text-light);
+      margin-top: 3px;
+      font-weight: 600;
+    }
+
+    /* ========================================
+       SECTION: 共感（Problem）
+       ======================================== */
+    .problem {
+      background: var(--white);
+      padding-bottom: 0;
+    }
+    .problem-card {
+      margin: 0;
+      border-radius: 0;
+      overflow: hidden;
+      background: #fff;
+    }
+    .problem-card-top {
+      text-align: center;
+      padding: 16px 20px 14px;
+      background: linear-gradient(135deg, var(--green-pale), #fff);
+    }
+    .problem-card-top .small {
+      font-size: 10px;
+      letter-spacing: 4px;
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+    .problem-card-top h2 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .problem-card-top h2 .yellow {
+      color: var(--green-dark);
+      background: linear-gradient(transparent 60%, var(--green-light) 60%);
+      padding: 0 4px;
+    }
+    .problem-card-photo {
+      position: relative;
+      height: 220px;
+      overflow: hidden;
+    }
+    .problem-card-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .problem-card-photo .trouble-label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(58,122,85,0.85));
+      padding: 40px 20px 14px;
+      text-align: center;
+    }
+    .problem-card-photo .trouble-label span {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+    .problem-list {
+      padding: 18px 16px 8px;
+      background: var(--green-deep);
+    }
+    .problem-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 11px 14px;
+      margin-bottom: 6px;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.08);
+      border-left: 3px solid var(--gold);
+    }
+    .problem-check {
+      color: var(--gold);
+      font-size: 14px;
+      font-weight: 900;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .problem-text {
+      font-size: 13px;
+      color: rgba(255,255,255,0.92);
+      font-weight: 500;
+      line-height: 1.5;
+    }
+    .problem-card-bottom {
+      text-align: center;
+      padding: 16px 20px 20px;
+      background: var(--green-deep);
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .problem-intro {
+      text-align: center;
+      padding: 0 20px 20px;
+      font-size: 14px;
+      color: var(--text-light);
+      line-height: 1.9;
+    }
+    .problem-bubble {
+      text-align: center;
+      margin: 18px 20px 0;
+      padding: 24px 20px;
+      background: var(--green-pale);
+      border-radius: 12px;
+      position: relative;
+    }
+    .problem-bubble::before {
+      content: '';
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 14px solid transparent;
+      border-bottom-color: var(--green-pale);
+    }
+    .problem-bubble p {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--green-dark);
+      line-height: 1.8;
+    }
+    .problem-bubble p .under {
+      background: linear-gradient(transparent 60%, var(--green-light) 60%);
+      padding: 0 4px;
+    }
+
+    /* ========================================
+       SECTION: 原因解説（Agitation）
+       ======================================== */
+    .agitation {
+      position: relative;
+      background: var(--text);
+      color: #fff;
+      overflow: hidden;
+    }
+    .agitation-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+    .agitation-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.22;
+    }
+    .agitation-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, var(--green-deep) 0%, rgba(42,94,64,0.92) 100%);
+    }
+    .agitation-content {
+      position: relative;
+      z-index: 2;
+      padding: 36px 24px;
+    }
+    .agitation-diag {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      padding: 6px 18px;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      transform: rotate(-3deg);
+      margin-bottom: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .agitation-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 1.4;
+      margin-bottom: 28px;
+      color: #fff;
+    }
+    .agitation-title .gold {
+      color: var(--gold);
+      background: linear-gradient(transparent 65%, rgba(201,169,97,0.3) 65%);
+      padding: 0 4px;
+    }
+    .agitation-text {
+      font-size: 14px;
+      line-height: 2;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 18px;
+    }
+    .agitation-text strong {
+      color: #fff;
+      background: linear-gradient(transparent 60%, rgba(168,213,181,0.3) 60%);
+      padding: 0 2px;
+      font-weight: 700;
+    }
+    .agitation-key {
+      background: rgba(168,213,181,0.12);
+      border: 2px solid var(--green-light);
+      padding: 24px 20px;
+      border-radius: 12px;
+      margin-top: 26px;
+      position: relative;
+    }
+    .agitation-key::before {
+      content: 'POINT';
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: var(--green-light);
+      color: var(--green-deep);
+      padding: 3px 12px;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      border-radius: 2px;
+    }
+    .agitation-key-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--green-light);
+      margin-bottom: 12px;
+      text-align: center;
+      line-height: 1.5;
+    }
+    .agitation-key-text {
+      font-size: 13px;
+      line-height: 1.9;
+      color: rgba(255,255,255,0.9);
+      text-align: center;
+    }
+
+    /* ========================================
+       SECTION: 解決策
+       ======================================== */
+    .solution {
+      background: var(--white);
+    }
+    .solution-hero {
+      position: relative;
+      height: 340px;
+      overflow: hidden;
+      margin: 0 20px 30px;
+      border-radius: 12px;
+    }
+    .solution-hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .solution-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(135deg,
+          rgba(42,94,64,0.88) 0%,
+          rgba(74,124,89,0.55) 50%,
+          rgba(42,94,64,0.88) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 24px;
+      text-align: center;
+    }
+    .solution-hero-stamp {
+      position: absolute;
+      top: 20px;
+      right: 16px;
+      background: var(--gold);
+      color: var(--green-deep);
+      padding: 8px 16px;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      transform: rotate(8deg);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .solution-label {
+      font-size: 11px;
+      letter-spacing: 4px;
+      color: var(--gold);
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+    .solution-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 28px;
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.4;
+      margin-bottom: 14px;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+    }
+    .solution-title .gold { color: var(--gold); }
+    .solution-sub {
+      font-size: 13px;
+      color: rgba(255,255,255,0.92);
+      line-height: 1.8;
+    }
+    .solution-body {
+      padding: 0 24px 20px;
+      font-size: 14px;
+      line-height: 2;
+      color: var(--text-light);
+      text-align: center;
+    }
+    .solution-body strong {
+      color: var(--green-dark);
+      font-weight: 700;
+    }
+
+    /* ========================================
+       SECTION: 選ばれる理由
+       ======================================== */
+    .reasons {
+      background: var(--green-pale);
+      padding-bottom: 20px;
+    }
+    .reasons-list {
+      padding: 0 20px;
+    }
+    .reason-item {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 16px rgba(74,124,89,0.12);
+    }
+    .reason-img {
+      position: relative;
+      height: 220px;
+      overflow: hidden;
+    }
+    .reason-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .reason-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 30%, rgba(42,94,64,0.75) 100%);
+    }
+    .reason-num {
+      position: absolute;
+      top: 14px;
+      left: -10px;
+      background: var(--green);
+      color: #fff;
+      padding: 10px 28px 10px 20px;
+      font-family: 'Noto Serif JP', serif;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      transform: rotate(-3deg);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      z-index: 2;
+    }
+    .reason-num .num-big {
+      font-size: 22px;
+      vertical-align: -2px;
+      margin-left: 4px;
+      color: var(--gold);
+    }
+    .reason-overlay-title {
+      position: absolute;
+      bottom: 14px;
+      left: 16px;
+      right: 16px;
+      color: #fff;
+      font-family: 'Noto Serif JP', serif;
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 1.4;
+      z-index: 2;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    }
+    .reason-overlay-title .accent { color: var(--gold); }
+    .reason-content {
+      padding: 18px 20px 20px;
+    }
+    .reason-text {
+      font-size: 13px;
+      line-height: 1.9;
+      color: var(--text-light);
+    }
+
+    /* ========================================
+       SECTION: プログラム内容
+       ======================================== */
+    .program {
+      background: var(--white);
+      padding-bottom: 20px;
+    }
+    .program-steps {
+      padding: 0 20px;
+    }
+    .program-step-card {
+      position: relative;
+      height: 270px;
+      margin-bottom: 0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(74,124,89,0.15);
+    }
+    .program-connector {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 36px;
+      position: relative;
+    }
+    .program-connector::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(180deg, var(--green), var(--gold));
+      transform: translateX(-50%);
+    }
+    .program-connector::after {
+      content: '▼';
+      font-size: 12px;
+      color: var(--gold);
+      background: #fff;
+      padding: 0 6px;
+      z-index: 1;
+      line-height: 1;
+    }
+    .program-step-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .program-step-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(42,94,64,0.3) 0%, rgba(42,94,64,0.94) 100%);
+    }
+    .program-step-month {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: rgba(255,255,255,0.95);
+      color: var(--green-dark);
+      padding: 6px 14px;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      border-radius: 2px;
+      z-index: 2;
+    }
+    .program-step-big-num {
+      position: absolute;
+      top: 8px;
+      right: 20px;
+      font-family: 'Noto Serif JP', serif;
+      font-size: 130px;
+      font-weight: 900;
+      color: rgba(201,169,97,0.22);
+      line-height: 0.9;
+      z-index: 2;
+    }
+    .program-step-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px 20px 22px;
+      z-index: 3;
+      color: #fff;
+    }
+    .program-step-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 22px;
+      font-weight: 900;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+    .program-step-title .gold { color: var(--gold); }
+    .program-step-text {
+      font-size: 13px;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.88);
+    }
+
+    /* ========================================
+       SECTION: ビフォーアフター（洗練デザイン）
+       ======================================== */
+    .ba {
+      background: linear-gradient(180deg, var(--green-pale) 0%, #fff 100%);
+      padding-bottom: 24px;
+      position: relative;
+    }
+    .ba::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 80px;
+      background: radial-gradient(ellipse at top, rgba(212,181,106,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .ba-list {
+      padding: 0 16px;
+    }
+    .ba-card {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 24px;
+      box-shadow:
+        0 10px 40px rgba(58,122,85,0.12),
+        0 2px 8px rgba(58,122,85,0.06);
+      position: relative;
+      border: 1px solid rgba(212,181,106,0.15);
+    }
+    .ba-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--green), var(--gold), var(--green));
+      z-index: 4;
+    }
+    .ba-tag {
+      position: absolute;
+      top: 18px;
+      left: 16px;
+      background: linear-gradient(135deg, var(--green-deep), var(--green-dark));
+      color: var(--gold);
+      padding: 6px 16px;
+      font-family: 'Noto Serif JP', serif;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      z-index: 3;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+      border-radius: 2px;
+    }
+    .ba-tag::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -6px;
+      transform: translateY(-50%);
+      border: 3px solid transparent;
+      border-right-color: var(--green-deep);
+    }
+    .ba-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 320px;
+      position: relative;
+      padding-top: 0;
+    }
+    .ba-side {
+      position: relative;
+      overflow: hidden;
+    }
+    .ba-side img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .ba-side::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.25) 100%);
+      pointer-events: none;
+    }
+    .ba-label {
+      position: absolute;
+      bottom: 14px;
+      left: 14px;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+      color: var(--text);
+      padding: 6px 16px;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      border-radius: 20px;
+      z-index: 2;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .ba-label.after {
+      left: auto;
+      right: 14px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--green-deep);
+    }
+    .ba-divider {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+      background: linear-gradient(180deg, transparent, var(--gold) 20%, var(--gold) 80%, transparent);
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+    .ba-divider::after {
+      content: '→';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--green-deep);
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 900;
+      box-shadow:
+        0 6px 20px rgba(0,0,0,0.3),
+        0 0 0 4px rgba(255,255,255,0.9),
+        0 0 0 5px rgba(212,181,106,0.4);
+    }
+    .ba-stats {
+      padding: 22px 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: linear-gradient(135deg, var(--green-deep) 0%, var(--green-dark) 100%);
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .ba-stats::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(212,181,106,0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .ba-stat {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .ba-stat-num {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 30px;
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+    .ba-stat-label {
+      font-size: 10px;
+      color: rgba(255,255,255,0.75);
+      letter-spacing: 2px;
+      margin-top: 6px;
+      font-weight: 500;
+    }
+    .ba-stat-divider {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(180deg, transparent, rgba(212,181,106,0.5), transparent);
+    }
+    .ba-meta {
+      padding: 16px 20px 18px;
+      font-size: 13px;
+      color: var(--text-light);
+      text-align: center;
+      background: #fff;
+      letter-spacing: 0.5px;
+    }
+    .ba-meta strong {
+      color: var(--green-dark);
+      font-weight: 900;
+      font-size: 14px;
+      font-family: 'Noto Serif JP', serif;
+    }
+
+    /* ========================================
+       SECTION: お客様の声
+       ======================================== */
+    .voices {
+      background: var(--white);
+      padding-bottom: 20px;
+    }
+    .voices-list {
+      padding: 0 20px;
+    }
+    .voice-card {
+      background: #f4f8f5;
+      border-radius: 12px;
+      padding: 24px 20px 20px;
+      margin-bottom: 16px;
+      position: relative;
+      border-top: 4px solid var(--green);
+    }
+    .voice-card::before {
+      content: '"';
+      position: absolute;
+      top: -8px;
+      left: 14px;
+      font-family: 'Noto Serif JP', serif;
+      font-size: 90px;
+      color: var(--green-light);
+      line-height: 1;
+      opacity: 0.6;
+    }
+    .voice-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+      position: relative;
+    }
+    .voice-avatar {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+      border: 3px solid var(--green-light);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .voice-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .voice-person-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .voice-person-meta {
+      font-size: 11px;
+      color: var(--text-light);
+      margin-top: 2px;
+    }
+    .voice-stars {
+      color: var(--gold);
+      font-size: 13px;
+      margin-top: 4px;
+      letter-spacing: 1px;
+    }
+    .voice-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 17px;
+      font-weight: 900;
+      color: var(--green-dark);
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+    .voice-text {
+      font-size: 13px;
+      line-height: 1.95;
+      color: var(--text-light);
+    }
+    .voice-result {
+      margin-top: 14px;
+      display: inline-block;
+      background: var(--green);
+      color: #fff;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: 900;
+      border-radius: 100px;
+      letter-spacing: 1px;
+    }
+
+    /* ========================================
+       SECTION: スタッフ紹介
+       ======================================== */
+    .staff {
+      background: var(--green-pale);
+      padding-bottom: 20px;
+    }
+    .staff-list {
+      padding: 0 20px;
+    }
+    .staff-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 16px;
+      box-shadow: 0 6px 18px rgba(74,124,89,0.12);
+      position: relative;
+    }
+    .staff-img {
+      position: relative;
+      height: 280px;
+      overflow: hidden;
+    }
+    .staff-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .staff-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 45%, rgba(42,94,64,0.88) 100%);
+    }
+    .staff-role-badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: var(--gold);
+      color: var(--green-deep);
+      padding: 6px 14px;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      z-index: 3;
+    }
+    .staff-role-badge.chief {
+      background: var(--green-deep);
+      color: var(--gold);
+      border: 1px solid var(--gold);
+    }
+    .staff-name-overlay {
+      position: absolute;
+      bottom: 18px;
+      left: 20px;
+      right: 20px;
+      color: #fff;
+      z-index: 2;
+    }
+    .staff-role-label {
+      font-size: 10px;
+      letter-spacing: 3px;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .staff-name-jp {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 22px;
+      font-weight: 900;
+      color: #fff;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+    .staff-name-kana {
+      font-size: 11px;
+      opacity: 0.85;
+      margin-bottom: 2px;
+    }
+    .staff-body {
+      padding: 20px;
+    }
+    .staff-creds {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+    .staff-cred {
+      background: var(--green-pale);
+      color: var(--green-dark);
+      padding: 5px 12px;
+      font-size: 10px;
+      font-weight: 700;
+      border-radius: 100px;
+      border: 1px solid var(--green-light);
+    }
+    .staff-message {
+      font-size: 13px;
+      line-height: 1.95;
+      color: var(--text-light);
+      padding: 14px 16px;
+      background: #f4f8f5;
+      border-radius: 8px;
+      border-left: 3px solid var(--green);
+    }
+    .staff-message::before {
+      content: '「';
+      font-family: 'Noto Serif JP', serif;
+      font-size: 18px;
+      color: var(--green);
+      font-weight: 900;
+    }
+    .staff-message::after {
+      content: '」';
+      font-family: 'Noto Serif JP', serif;
+      font-size: 18px;
+      color: var(--green);
+      font-weight: 900;
+    }
+
+    /* ========================================
+       SECTION: アクセス
+       ======================================== */
+    .access {
+      background: var(--text);
+      color: #fff;
+      padding: 30px 0 24px;
+    }
+    .access-list {
+      padding: 0 20px;
+    }
+    .access-item {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(201,169,97,0.3);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 12px;
+    }
+    .access-name {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+    .access-detail {
+      font-size: 12px;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.8;
+    }
+    .access-tag {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--green-deep);
+      padding: 3px 10px;
+      font-size: 10px;
+      font-weight: 900;
+      border-radius: 100px;
+      margin-top: 8px;
+      letter-spacing: 1px;
+    }
+
+    /* ========================================
+       SECTION: 料金プラン
+       ======================================== */
+    .pricing {
+      background: var(--white);
+      padding-bottom: 20px;
+    }
+    .pricing-card {
+      margin: 0 20px;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 10px 30px rgba(74,124,89,0.2);
+      border: 3px solid var(--green);
+      margin-bottom: 16px;
+    }
+    .pricing-trial {
+      border-color: var(--red);
+    }
+    .pricing-header {
+      background: linear-gradient(135deg, var(--green-deep), var(--green));
+      color: #fff;
+      padding: 22px 20px;
+      text-align: center;
+    }
+    .pricing-trial .pricing-header {
+      background: linear-gradient(135deg, var(--red), #a83a3f);
+    }
+    .pricing-badge {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--green-deep);
+      padding: 5px 16px;
+      font-size: 11px;
+      font-weight: 900;
+      border-radius: 100px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+    .pricing-name {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 22px;
+      font-weight: 900;
+      margin-bottom: 4px;
+      letter-spacing: 1px;
+    }
+    .pricing-sub {
+      font-size: 12px;
+      opacity: 0.9;
+    }
+    .pricing-body {
+      padding: 22px 20px;
+    }
+    .pricing-price {
+      text-align: center;
+      padding-bottom: 18px;
+      border-bottom: 1px dashed #d4e0d6;
+      margin-bottom: 18px;
+    }
+    .pricing-original {
+      font-size: 13px;
+      color: var(--text-light);
+      text-decoration: line-through;
+    }
+    .pricing-main {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 42px;
+      font-weight: 900;
+      color: var(--text);
+      line-height: 1;
+      margin: 6px 0;
+    }
+    .pricing-trial .pricing-main {
+      color: var(--red);
+    }
+    .pricing-main .unit { font-size: 16px; }
+    .pricing-main .tax { font-size: 11px; color: var(--text-light); }
+    .pricing-note {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 4px;
+      margin-top: 6px;
+    }
+    .pricing-includes {
+      list-style: none;
+    }
+    .pricing-includes li {
+      padding: 10px 0 10px 28px;
+      font-size: 13px;
+      color: var(--text);
+      position: relative;
+      border-bottom: 1px solid #f0f5f1;
+    }
+    .pricing-includes li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      color: #fff;
+      background: var(--green);
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 10px;
+    }
+    .pricing-includes li:last-child { border-bottom: none; }
+
+    /* ========================================
+       SECTION: FAQ
+       ======================================== */
+    .faq {
+      background: var(--green-pale);
+      padding-bottom: 20px;
+    }
+    .faq-list {
+      padding: 0 20px;
+    }
+    .faq-item {
+      background: #fff;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(74,124,89,0.08);
+    }
+    .faq-q {
+      padding: 16px 18px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.6;
+      background: #f4f8f5;
+    }
+    .faq-q-mark {
+      color: var(--green);
+      font-family: 'Noto Serif JP', serif;
+      font-size: 22px;
+      font-weight: 900;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+    .faq-a {
+      padding: 16px 18px 18px 48px;
+      font-size: 13px;
+      line-height: 1.9;
+      color: var(--text-light);
+      background: #fff;
+    }
+
+    /* ========================================
+       SECTION: 最終CTA
+       ======================================== */
+    .final {
+      position: relative;
+      background: var(--green-deep);
+      color: #fff;
+      overflow: hidden;
+    }
+    .final-hero {
+      position: relative;
+      height: 320px;
+      overflow: hidden;
+    }
+    .final-hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.4);
+    }
+    .final-hero-text {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .final-hero-text .label {
+      font-size: 11px;
+      letter-spacing: 4px;
+      color: var(--gold);
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+    .final-hero-text h2 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 30px;
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.45;
+      margin-bottom: 14px;
+      text-shadow: 0 4px 16px rgba(0,0,0,0.6);
+    }
+    .final-hero-text h2 .gold { color: var(--gold); }
+    .final-hero-text p {
+      font-size: 14px;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.8;
+    }
+    .final-hero-diag {
+      position: absolute;
+      top: 24px;
+      right: -30px;
+      background: var(--red);
+      color: #fff;
+      padding: 8px 40px;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      transform: rotate(12deg);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+    }
+    .final-guarantee {
+      margin: 18px 20px;
+      background: linear-gradient(135deg, rgba(201,169,97,0.12), rgba(168,213,181,0.08));
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      padding: 28px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .final-guarantee-badge {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold);
+      color: var(--green-deep);
+      padding: 6px 20px;
+      font-size: 11px;
+      font-weight: 900;
+      border-radius: 100px;
+      letter-spacing: 2px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      white-space: nowrap;
+    }
+    .final-guarantee-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 22px;
+      font-weight: 900;
+      color: #fff;
+      margin: 10px 0 12px;
+      line-height: 1.5;
+    }
+    .final-guarantee-title .gold { color: var(--gold); }
+    .final-guarantee-text {
+      font-size: 12px;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.9;
+    }
+    .final-shops {
+      margin: 18px 20px 0;
+      padding: 20px 0 0;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      text-align: center;
+    }
+    .final-shops-label {
+      font-size: 10px;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+    .final-shops-list {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 15px;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    /* ========================================
+       スティッキーCTA（3ボタン）
+       ======================================== */
+    .sticky-cta {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 500px;
+      background: rgba(255,255,255,0.98);
+      backdrop-filter: blur(10px);
+      padding: 8px 10px;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px;
+      z-index: 100;
+      border-top: 2px solid var(--green);
+      transition: bottom 0.35s ease, opacity 0.35s ease;
+    }
+    .sticky-cta a {
+      padding: 12px 4px;
+      border-radius: 100px;
+      font-size: 11px;
+      font-weight: 900;
+      text-align: center;
+      letter-spacing: 0.3px;
+      line-height: 1.3;
+    }
+    .sticky-cta .line {
+      background: var(--line-green);
+      color: #fff;
+    }
+    .sticky-cta .trial {
+      background: linear-gradient(135deg, var(--red), #a83a3f);
+      color: #fff;
+    }
+    .sticky-cta .book {
+      background: linear-gradient(135deg, var(--green), var(--green-dark));
+      color: #fff;
+    }
+    .sticky-cta a .small {
+      display: block;
+      font-size: 9px;
+      opacity: 0.85;
+      margin-top: 1px;
+    }
+
+    /* ========================================
+       HERO SLOTS INDICATOR
+       ======================================== */
+    .fv-slots {
+      margin-bottom: 16px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 8px;
+      padding: 12px 16px;
+      border: 1px solid rgba(201,169,97,0.3);
+    }
+    .fv-slots-bar {
+      height: 6px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 3px;
+      margin-bottom: 8px;
+      overflow: hidden;
+    }
+    .fv-slots-fill {
+      height: 100%;
+      width: 60%;
+      background: linear-gradient(90deg, var(--gold), #faf0d0);
+      border-radius: 3px;
+      animation: slots-pulse 2s ease-in-out infinite;
+    }
+    @keyframes slots-pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.75; }
+    }
+    .fv-slots-text {
+      font-size: 11px;
+      color: rgba(255,255,255,0.8);
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+    .fv-slots-text .red-bold {
+      color: #ff7070;
+      font-weight: 900;
+      font-size: 13px;
+    }
+
+    /* ========================================
+       SCROLL REVEAL ANIMATION
+       ======================================== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ========================================
+       FAQ ACCORDION
+       ======================================== */
+    .faq-item {
+      cursor: pointer;
+    }
+    .faq-q {
+      justify-content: space-between;
+      cursor: pointer;
+      user-select: none;
+      position: relative;
+    }
+    .faq-q-text {
+      flex: 1;
+    }
+    .faq-toggle {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--green);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 1;
+      transition: transform 0.3s ease, background 0.2s;
+      margin-left: 8px;
+      margin-top: 2px;
+    }
+    .faq-item.open .faq-toggle {
+      transform: rotate(45deg);
+      background: var(--gold);
+    }
+    .faq-a {
+      display: none;
+      border-top: 1px solid rgba(74,124,89,0.12);
+    }
+    .faq-item.open .faq-a {
+      display: block;
+    }
+
+    /* ========================================
+       BA BEFORE GRAYSCALE
+       ======================================== */
+    .ba-side:first-child img {
+      filter: none;
+    }
+    .ba-side:last-child img {
+      filter: none;
+    }
+
+    /* ========================================
+       VOICE AVATAR IMPROVEMENT
+       ======================================== */
+    .voice-avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid var(--green-light);
+      flex-shrink: 0;
+    }
+    .voice-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    /* ========================================
+       TRUST SECTION IMPROVEMENT
+       ======================================== */
+    .trust-num {
+      background: linear-gradient(135deg, var(--green-deep), var(--green));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ========================================
+       ACCESS MAP BUTTON
+       ======================================== */
+    .access-map-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(201,169,97,0.4);
+      color: var(--gold-light);
+      padding: 7px 14px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      transition: background 0.2s;
+    }
+    .access-map-btn:hover {
+      background: rgba(201,169,97,0.2);
+    }
+
+    /* ========================================
+       STAFF CARD IMPROVEMENT
+       ======================================== */
+    .staff-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .staff-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(74,124,89,0.2);
+    }
+
+    /* ========================================
+       PRICING HIGHLIGHT
+       ======================================== */
+    .pricing-trial-wrap {
+      position: relative;
+      padding-top: 18px;
+      margin: 0 20px 16px;
+    }
+    .pricing-trial-wrap .pricing-card {
+      margin: 0;
+    }
+    .pricing-hot-badge {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--red);
+      color: #fff;
+      padding: 5px 16px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 900;
+      white-space: nowrap;
+      letter-spacing: 0.5px;
+      z-index: 5;
+      box-shadow: 0 3px 10px rgba(196,71,75,0.4);
+    }
+
+    /* ========================================
+       REASON CARDS STAGGER
+       ======================================== */
+    .reason-item:nth-child(1) { transition-delay: 0s; }
+    .reason-item:nth-child(2) { transition-delay: 0.12s; }
+    .reason-item:nth-child(3) { transition-delay: 0.24s; }
+    .reason-item:nth-child(4) { transition-delay: 0.36s; }
+    .reason-item:nth-child(5) { transition-delay: 0.48s; }
+
+    /* ========================================
+       SECTION ENTRY IMPROVEMENT
+       ======================================== */
+    .sec-title {
+      animation: none !important;
+    }
+
+    /* ========================================
+       OTHER STORES SECTION
+       ======================================== */
+    .other-stores {
+      background: #f0f4f1;
+      padding: 24px 20px 36px;
+      border-top: 3px solid var(--green-light);
+    }
+    .other-stores-heading {
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: 4px;
+      color: var(--text-light);
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .other-stores-heading::before,
+    .other-stores-heading::after {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 1px;
+      background: var(--green-light);
+      vertical-align: middle;
+      margin: 0 10px;
+    }
+    .other-store-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 18px 18px 14px;
+      margin-bottom: 12px;
+      box-shadow: 0 3px 10px rgba(74,124,89,0.08);
+      border-left: 4px solid var(--green);
+    }
+    .other-store-name {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 15px;
+      font-weight: 900;
+      color: var(--green-dark);
+      margin-bottom: 6px;
+    }
+    .other-store-detail {
+      font-size: 12px;
+      color: var(--text-light);
+      line-height: 1.8;
+      margin-bottom: 10px;
+    }
+    .other-store-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .other-store-tag {
+      background: var(--green-pale);
+      color: var(--green-dark);
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- TOP ANNOUNCE -->
+  <div class="top-announce">
+    ★ <span class="em">初回体験 ¥2,200</span>（税込）月5名限定 / 神戸三宮・元町 徒歩5分 ★
+  </div>
+
+  <!-- =================================
+       SECTION 1: HERO（ラグジュアリー・ダーク）
+       ================================= -->
+  <section class="fv">
+    <!-- 写真エリア -->
+    <div class="fv-photo">
+      <img src="sample_img/real_hero_trx2.png" alt="">
+
+      <!-- 左上装飾ドット -->
+      <div class="fv-dots">
+        <span></span><span></span><span></span>
+      </div>
+
+      <!-- 右上縦書きテキスト -->
+      <div class="fv-vertical">整体×パーソナルトレーニング</div>
+
+      <!-- 斜めリボン -->
+      <div class="fv-ribbon">女性のボディメイクに特化 ・ 初心者9割 ・ 神戸三宮/元町</div>
+
+      <!-- 高級スタンプ -->
+      <div class="fv-stamp">
+        <div class="fv-stamp-inner">
+          <div class="fv-stamp-top">CERTIFIED</div>
+          <div class="fv-stamp-star">★ ★ ★</div>
+          <div class="fv-stamp-main">国家<br>資格</div>
+          <div class="fv-stamp-bottom">PT・整体</div>
+        </div>
+      </div>
+
+      <!-- 写真上の大タイトル -->
+      <div class="fv-title-overlay">
+        <div class="fv-eyebrow">THE BODY REVOLUTION</div>
+        <h1 class="fv-title-main">
+          <span class="small">運動ゼロでも、大丈夫。</span>
+          整体で整えて、<br><span class="emph">楽しく</span>変わる3ヶ月へ。
+        </h1>
+      </div>
+
+      <!-- 金色装飾線 -->
+      <div class="fv-photo-border"></div>
+    </div>
+
+    <!-- コンテンツエリア -->
+    <div class="fv-content">
+
+      <!-- 3つの円ポイント（写真直下に移動） -->
+      <div class="fv-circles">
+        <div class="fv-circle">
+          <div class="icon">🩺</div>
+          <div class="main">
+            理学療法士が
+            <span class="big">徹底分析</span>
+          </div>
+          <div class="sub">国家資格の<br>医療サポート</div>
+        </div>
+        <div class="fv-circle">
+          <div class="icon">🚶‍♀️</div>
+          <div class="main">
+            三宮・元町
+            <span class="big">徒歩5分</span>
+          </div>
+          <div class="sub">通いやすい<br>駅近立地</div>
+        </div>
+        <div class="fv-circle">
+          <div class="icon">💪</div>
+          <div class="main">
+            初心者の方
+            <span class="big">9割</span>
+          </div>
+          <div class="sub">運動ゼロから<br>みんな成功</div>
+        </div>
+      </div>
+
+      <!-- 装飾区切り -->
+      <div class="fv-divider">
+        <div class="fv-divider-diamond"></div>
+        <span class="fv-divider-label">WHY BODY NATE</span>
+        <div class="fv-divider-diamond"></div>
+      </div>
+
+      <!-- メインメッセージ -->
+      <div class="fv-message">
+        <h2 class="fv-message-title">
+          整体 × PT で、<br>
+          <span class="gold">あなただけの体</span>を作る。
+        </h2>
+        <p class="fv-message-desc">
+          「運動が苦手」「続かない」「何からすればいいか分からない」──<br>
+          そんなあなたに<strong>理学療法士</strong>が優しく寄り添います。<br>
+          まず整体で体を整え、あなたのペースで楽しくトレーニング。
+        </p>
+      </div>
+
+      <!-- CTAエリア -->
+      <div class="fv-cta-wrap">
+        <div class="fv-slots">
+          <div class="fv-slots-bar">
+            <div class="fv-slots-fill"></div>
+          </div>
+          <div class="fv-slots-text">今月の残り予約枠 <span class="red-bold">残り3名</span></div>
+        </div>
+        <a href="#trial" class="fv-cta-main">
+          <span class="main-text">初回体験 ¥2,200 を予約する</span>
+          <span class="price">◆ 通常 ¥10,000 → 今だけ ◆</span>
+        </a>
+        <div class="fv-cta-row">
+          <a href="#" class="fv-cta-line">LINEで予約</a>
+          <a href="#book" class="fv-cta-instant">すぐ予約はこちら</a>
+        </div>
+        <p class="fv-cta-note"><span class="em">★ 月5名限定 ★</span> 強引な勧誘・一切なし</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================
+       共感（Problem）
+       ================================= -->
+  <section class="problem reveal">
+    <div class="problem-card">
+      <div class="problem-card-top">
+        <p class="small">── YOUR TROUBLE ──</p>
+        <h2>そのダイエット、<br><span class="yellow">もう疲れた</span>。</h2>
+      </div>
+      <div class="problem-card-photo">
+        <img src="sample_img/real_diet_tired.png" alt="">
+        <div class="trouble-label"><span>こんなお悩みありませんか？</span></div>
+      </div>
+      <div class="problem-list">
+        <div class="problem-item"><span class="problem-check">☑</span><span class="problem-text">ジムにもエステにも通った。でも、結果が出なかった。</span></div>
+        <div class="problem-item"><span class="problem-check">☑</span><span class="problem-text">体重は落ちたのに、鏡に映る自分が変わらない。</span></div>
+        <div class="problem-item"><span class="problem-check">☑</span><span class="problem-text">産後、昔の体型に戻らないまま何年も過ぎた。</span></div>
+        <div class="problem-item"><span class="problem-check">☑</span><span class="problem-text">無理な食事制限は続かない。そしてリバウンド。</span></div>
+        <div class="problem-item"><span class="problem-check">☑</span><span class="problem-text">膝や腰が痛くて、運動すること自体が怖い。</span></div>
+        <div class="problem-item"><span class="problem-check">☑</span><span class="problem-text">50代・60代からでも、本当に変われるのだろうか。</span></div>
+        <div class="problem-item"><span class="problem-check">☑</span><span class="problem-text">素人トレーナーに自分の体を任せるのは、正直不安。</span></div>
+        <div class="problem-item"><span class="problem-check">☑</span><span class="problem-text">3ヶ月後、胸を張って服を着こなせる私でいたい。</span></div>
+      </div>
+      <div class="problem-card-bottom">
+        <p style="font-family:'Noto Serif JP',serif;font-size:15px;font-weight:700;color:#fff;line-height:1.8;">その悩みのすべては、<br><span style="background:linear-gradient(transparent 60%, rgba(212,181,106,0.4) 60%);padding:0 4px;">「体の個別評価」</span>が<br>抜けているからです。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================
+       CTA 1回目（共感後）
+       ================================= -->
+  <div class="cta-triple">
+    <p class="sub-label">── FIRST STEP ──</p>
+    <h3 class="title">まずは、<span class="gold">¥2,200の体験</span>から。</h3>
+    <a href="#trial" class="cta-btn-main">
+      初回体験を予約する
+      <span class="price">¥2,200（税込）/ 60分</span>
+    </a>
+    <div class="cta-row">
+      <a href="#" class="cta-btn-sub cta-btn-line">LINEで予約</a>
+      <a href="#book" class="cta-btn-sub cta-btn-instant">すぐ予約</a>
+    </div>
+    <p class="cta-note"><span class="em">月5名限定</span> / 強引な勧誘なし</p>
+  </div>
+
+  <!-- =================================
+       原因解説（Agitation）
+       ================================= -->
+  <section class="agitation reveal">
+    <div class="agitation-bg">
+      <img src="sample_img/real_seitai_neck.jpg" alt="">
+    </div>
+    <div class="agitation-content">
+      <div class="agitation-diag">衝撃の真実</div>
+      <h2 class="agitation-title">
+        なぜ、あなたの<br>
+        ダイエットは、<br>
+        <span class="gold">失敗してきたのか。</span>
+      </h2>
+
+      <p class="agitation-text">
+        ジムに通う。エステに通う。食事を減らす。<br>
+        それでも痩せない、続かない、変わらない。<br>
+        <strong>原因は、あなたの努力不足ではありません。</strong>
+      </p>
+      <p class="agitation-text">
+        人の体は、一人ひとり骨格・姿勢・筋肉バランス・過去の怪我・生活習慣がまったく違います。<br>
+        それを無視した<strong>「画一的なプログラム」</strong>では、痩せることも、見た目を変えることも絶対にできません。
+      </p>
+      <p class="agitation-text">
+        さらに深刻なのは、<strong>間違った運動が体を壊すこと</strong>。<br>
+        膝を痛め、腰を痛め、肩を痛める──<br>
+        素人指導の現場では、今この瞬間もそれが起きています。
+      </p>
+
+      <div class="agitation-key">
+        <div class="agitation-key-title">
+          だから、Body Nateには<br>
+          「理学療法士」がいる。
+        </div>
+        <p class="agitation-key-text">
+          医療の国家資格を持つ理学療法士だけが、<br>
+          あなたの体を科学的に「評価」し、<br>
+          根本原因を「特定」し、安全に「変える」ことができる。<br>
+          それが、Body Nateが選ばれている理由です。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================
+       解決策
+       ================================= -->
+  <section class="solution reveal">
+    <div class="sec-title">
+      <p class="sec-label">OUR SOLUTION</p>
+      <h2 class="sec-heading">医療のプロが、<br><span class="accent">あなたを変える。</span></h2>
+    </div>
+
+    <div class="solution-hero">
+      <img src="sample_img/real_training_dumbbell.jpg" alt="">
+      <div class="solution-hero-stamp">RECOMMENDED</div>
+      <div class="solution-hero-overlay">
+        <p class="solution-label">─ BODY NATE METHOD ─</p>
+        <h3 class="solution-title">
+          医療の知見 ×<br>
+          <span class="gold">ボディメイクの融合</span>
+        </h3>
+        <p class="solution-sub">
+          整体で体を整え、パーソナルトレーニングで<br>
+          「見た目」を変える、Body Nate独自のメソッド。
+        </p>
+      </div>
+    </div>
+
+    <p class="solution-body">
+      怪我を抱えた方、50代・60代の方、産後のママ。<br>
+      <strong>どんな状態の体でも、理学療法士が安全に・最短で結果へ導きます。</strong><br>
+      だから、諦めていた方こそ、Body Nateで未来が変わります。
+    </p>
+  </section>
+
+  <!-- =================================
+       CTA 2回目
+       ================================= -->
+  <div class="cta-triple on-dark">
+    <p class="sub-label">── TRIAL OFFER ──</p>
+    <h3 class="title">あなたの体を、<br><span class="gold">まず無料で診断。</span></h3>
+    <a href="#trial" class="cta-btn-main">
+      初回体験を予約する
+      <span class="price">¥2,200（税込）/ 60分</span>
+    </a>
+    <div class="cta-row">
+      <a href="#" class="cta-btn-sub cta-btn-line">LINEで予約</a>
+      <a href="#book" class="cta-btn-sub cta-btn-instant">すぐ予約</a>
+    </div>
+    <p class="cta-note">通常 ¥10,000 → 今だけ <span class="em">¥2,200</span></p>
+  </div>
+
+  <!-- =================================
+       選ばれる5つの理由
+       ================================= -->
+  <section class="reasons reveal">
+    <div class="sec-title">
+      <p class="sec-label">5 REASONS</p>
+      <h2 class="sec-heading">Body Nateが<br>選ばれる、<br><span class="accent">5つの理由。</span></h2>
+    </div>
+
+    <div class="reasons-list">
+      <div class="reason-item">
+        <div class="reason-img">
+          <img src="sample_img/real_seitai_closeup.jpg" alt="">
+          <div class="reason-num">REASON<span class="num-big">01</span></div>
+          <h3 class="reason-overlay-title"><span class="accent">理学療法士</span>が<br>あなたの体を徹底分析</h3>
+        </div>
+        <div class="reason-content">
+          <p class="reason-text">
+            医療現場で数多くの身体を診てきた国家資格保有者が、関節可動域・姿勢・筋肉バランスまで徹底評価。あなただけの、世界でひとつのオーダーメイドプログラムを設計します。
+          </p>
+        </div>
+      </div>
+
+      <div class="reason-item">
+        <div class="reason-img">
+          <img src="sample_img/real_seitai_hip.jpg" alt="">
+          <div class="reason-num">REASON<span class="num-big">02</span></div>
+          <h3 class="reason-overlay-title">整体×PTの<br><span class="accent">独自メソッド</span></h3>
+        </div>
+        <div class="reason-content">
+          <p class="reason-text">
+            まず整体で体の歪みを整え、正しく動ける「土台」を作ってからトレーニングに入る独自メソッド。最小の努力で最大の変化を引き出します。
+          </p>
+        </div>
+      </div>
+
+      <div class="reason-item">
+        <div class="reason-img">
+          <img src="sample_img/real_training_cable.jpg" alt="">
+          <div class="reason-num">REASON<span class="num-big">03</span></div>
+          <h3 class="reason-overlay-title">完全個室・<br><span class="accent">マンツーマン</span>指導</h3>
+        </div>
+        <div class="reason-content">
+          <p class="reason-text">
+            他のお客様と顔を合わせることは一切ありません。完全個室の贅沢な空間で、あなたとトレーナーだけの濃密な時間を過ごしていただけます。
+          </p>
+        </div>
+      </div>
+
+      <div class="reason-item">
+        <div class="reason-img">
+          <img src="sample_img/real_seitai_knee.jpg" alt="">
+          <div class="reason-num">REASON<span class="num-big">04</span></div>
+          <h3 class="reason-overlay-title">怪我・高齢の方でも<br><span class="accent">安心して通える</span></h3>
+        </div>
+        <div class="reason-content">
+          <p class="reason-text">
+            理学療法士だからこそ、膝痛・腰痛・肩痛のある方、50代〜70代の方、産後のママにも完全対応。医療的視点で安全を担保しながら、確実に体を変えていきます。
+          </p>
+        </div>
+      </div>
+
+      <div class="reason-item">
+        <div class="reason-img">
+          <img src="sample_img/real_reason5_ba.jpg" alt="" style="object-position:center 38%;">
+          <div class="reason-num">REASON<span class="num-big">05</span></div>
+          <h3 class="reason-overlay-title">体重じゃない、<br><span class="accent">見た目</span>を変える。</h3>
+        </div>
+        <div class="reason-content">
+          <p class="reason-text">
+            数字だけ追うダイエットとは違います。姿勢・ボディライン・服の着こなしまで変わる「見た目ファースト」のボディメイクで、3ヶ月後のあなたは誰もが振り返る別人になります。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================
+       CTA 3回目
+       ================================= -->
+  <div class="cta-triple">
+    <p class="sub-label">── LIMITED OFFER ──</p>
+    <h3 class="title">月5名限定<br><span class="gold">¥2,200</span> で、体験できる。</h3>
+    <a href="#trial" class="cta-btn-main">
+      初回体験を予約する
+      <span class="price">¥2,200（税込）/ 60分</span>
+    </a>
+    <div class="cta-row">
+      <a href="#" class="cta-btn-sub cta-btn-line">LINEで予約</a>
+      <a href="#book" class="cta-btn-sub cta-btn-instant">すぐ予約</a>
+    </div>
+    <p class="cta-note">通常 ¥10,000 → 今だけ <span class="em">¥2,200</span></p>
+  </div>
+
+  <!-- =================================
+       プログラム内容
+       ================================= -->
+  <section class="program reveal">
+    <div class="sec-title">
+      <p class="sec-label">PROGRAM</p>
+      <h2 class="sec-heading">3ヶ月で別人になる、<br><span class="accent">変化のプロセス</span></h2>
+    </div>
+
+    <div class="program-steps">
+      <div class="program-step-card">
+        <img src="sample_img/real_seitai_joint.jpg" alt="">
+        <div class="program-step-month">MONTH 01</div>
+        <div class="program-step-big-num">01</div>
+        <div class="program-step-content">
+          <h3 class="program-step-title">体を<span class="gold">評価し、整える</span>月</h3>
+          <p class="program-step-text">
+            理学療法士による初回評価で体の現状を可視化。整体で歪みを整え、正しく動ける体の土台を作ります。
+          </p>
+        </div>
+      </div>
+
+      <div class="program-connector"></div>
+
+      <div class="program-step-card">
+        <img src="sample_img/real_training_stepup.jpg" alt="">
+        <div class="program-step-month">MONTH 02</div>
+        <div class="program-step-big-num">02</div>
+        <div class="program-step-content">
+          <h3 class="program-step-title">姿勢と<span class="gold">コアを作り直す</span>月</h3>
+          <p class="program-step-text">
+            インナーマッスルを本格的に鍛え、体の軸から変えていきます。見た目の変化をはっきり実感できる時期です。
+          </p>
+        </div>
+      </div>
+
+      <div class="program-connector"></div>
+
+      <div class="program-step-card">
+        <img src="sample_img/real_training_review.jpg" alt="">
+        <div class="program-step-month">MONTH 03</div>
+        <div class="program-step-big-num">03</div>
+        <div class="program-step-content">
+          <h3 class="program-step-title">見た目を<span class="gold">仕上げる</span>月</h3>
+          <p class="program-step-text">
+            ボディラインを磨き上げる最終月。服を綺麗に着こなせる、写真を撮りたくなる「別人の自分」に出会えます。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================
+       ビフォーアフター
+       ================================= -->
+  <section class="ba reveal">
+    <div class="sec-title">
+      <p class="sec-label">BEFORE / AFTER</p>
+      <h2 class="sec-heading">お客様の、<br><span class="accent">リアルな変化。</span></h2>
+    </div>
+
+    <div class="ba-list">
+      <div class="ba-card">
+        <div class="ba-tag">CASE 01</div>
+        <div class="ba-images">
+          <div class="ba-side">
+            <img src="sample_img/ba2_before.jpg" alt="Before">
+            <div class="ba-label">BEFORE</div>
+          </div>
+          <div class="ba-side">
+            <img src="sample_img/ba2_after.jpg" alt="After">
+            <div class="ba-label after">AFTER</div>
+          </div>
+          <div class="ba-divider"></div>
+        </div>
+        <div class="ba-stats">
+          <div class="ba-stat">
+            <div class="ba-stat-num">−12<span style="font-size:14px;">cm</span></div>
+            <div class="ba-stat-label">ウエスト</div>
+          </div>
+          <div class="ba-stat-divider"></div>
+          <div class="ba-stat">
+            <div class="ba-stat-num">−8<span style="font-size:14px;">kg</span></div>
+            <div class="ba-stat-label">体重</div>
+          </div>
+          <div class="ba-stat-divider"></div>
+          <div class="ba-stat">
+            <div class="ba-stat-num">3<span style="font-size:14px;">ヶ月</span></div>
+            <div class="ba-stat-label">期間</div>
+          </div>
+        </div>
+        <div class="ba-meta"><strong>M.Kさん</strong> / 38歳</div>
+      </div>
+
+      <div class="ba-card">
+        <div class="ba-tag">CASE 02</div>
+        <div class="ba-images">
+          <div class="ba-side">
+            <img src="sample_img/ba1_before.jpg" alt="Before">
+            <div class="ba-label">BEFORE</div>
+          </div>
+          <div class="ba-side">
+            <img src="sample_img/ba1_after.jpg" alt="After">
+            <div class="ba-label after">AFTER</div>
+          </div>
+          <div class="ba-divider"></div>
+        </div>
+        <div class="ba-stats">
+          <div class="ba-stat">
+            <div class="ba-stat-num">−12<span style="font-size:14px;">cm</span></div>
+            <div class="ba-stat-label">ウエスト</div>
+          </div>
+          <div class="ba-stat-divider"></div>
+          <div class="ba-stat">
+            <div class="ba-stat-num">−7<span style="font-size:14px;">kg</span></div>
+            <div class="ba-stat-label">体重</div>
+          </div>
+          <div class="ba-stat-divider"></div>
+          <div class="ba-stat">
+            <div class="ba-stat-num">3<span style="font-size:14px;">ヶ月</span></div>
+            <div class="ba-stat-label">期間</div>
+          </div>
+        </div>
+        <div class="ba-meta"><strong>Y.Sさん</strong> / 31歳</div>
+      </div>
+
+      <div class="ba-card">
+        <div class="ba-tag">CASE 03</div>
+        <div class="ba-images">
+          <div class="ba-side">
+            <img src="sample_img/ba3_before.jpg" alt="Before">
+            <div class="ba-label">BEFORE</div>
+          </div>
+          <div class="ba-side">
+            <img src="sample_img/ba3_after.jpg" alt="After">
+            <div class="ba-label after">AFTER</div>
+          </div>
+          <div class="ba-divider"></div>
+        </div>
+        <div class="ba-stats">
+          <div class="ba-stat">
+            <div class="ba-stat-num">−14<span style="font-size:14px;">cm</span></div>
+            <div class="ba-stat-label">ウエスト</div>
+          </div>
+          <div class="ba-stat-divider"></div>
+          <div class="ba-stat">
+            <div class="ba-stat-num">−12<span style="font-size:14px;">kg</span></div>
+            <div class="ba-stat-label">体重</div>
+          </div>
+          <div class="ba-stat-divider"></div>
+          <div class="ba-stat">
+            <div class="ba-stat-num">4<span style="font-size:14px;">ヶ月</span></div>
+            <div class="ba-stat-label">期間</div>
+          </div>
+        </div>
+        <div class="ba-meta"><strong>T.Aさん</strong> / 33歳</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================
+       CTA 4回目
+       ================================= -->
+  <div class="cta-triple on-dark">
+    <p class="sub-label">── YOUR TURN ──</p>
+    <h3 class="title">次のBEFORE/AFTERは、<br><span class="gold">あなたかも。</span></h3>
+    <a href="#trial" class="cta-btn-main">
+      初回体験を予約する
+      <span class="price">¥2,200（税込）/ 60分</span>
+    </a>
+    <div class="cta-row">
+      <a href="#" class="cta-btn-sub cta-btn-line">LINEで予約</a>
+      <a href="#book" class="cta-btn-sub cta-btn-instant">すぐ予約</a>
+    </div>
+    <p class="cta-note"><span class="em">月5名限定</span> / 強引な勧誘なし</p>
+  </div>
+
+  <!-- =================================
+       お客様の声
+       ================================= -->
+  <section class="voices reveal">
+    <div class="sec-title">
+      <p class="sec-label">CUSTOMER VOICE</p>
+      <h2 class="sec-heading">お客様の、<br><span class="accent">リアルな声。</span></h2>
+      <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:8px;">
+        <span style="font-size:15px;color:#f4b400;">★★★★★</span>
+        <span style="font-size:12px;font-weight:700;color:var(--green);">4.9</span>
+        <span style="font-size:11px;color:var(--text-light);">Google口コミ（87件）</span>
+      </div>
+    </div>
+
+    <div class="voices-list">
+      <div class="voice-card">
+        <div class="voice-header">
+          <div class="voice-avatar"><img src="sample_img/voice_customer3.jpg" alt=""></div>
+          <div>
+            <div class="voice-person-name">Mさん（32歳）</div>
+            <div class="voice-stars" style="color:#f4b400;font-size:13px;letter-spacing:2px;">★★★★★</div>
+          </div>
+        </div>
+        <h4 class="voice-title">心から信頼できるサロンで、安心できました。</h4>
+        <p class="voice-text">
+          心から信頼できるサロン様で、最初からとても安心いたしました！ありがとうございました！施術中も自分の状態や痛みなども都度聞いてくださったり、大変為になる知識も、本気でお答えくださるのでとても勉強になりました。結果はもちろんですが、モチベーションもとても上がりました。
+        </p>
+        <div class="voice-result">−8kg / ウエスト−12cm</div>
+      </div>
+
+      <div class="voice-card">
+        <div class="voice-header">
+          <div class="voice-avatar"><img src="sample_img/voice_customer_y.png" alt=""></div>
+          <div>
+            <div class="voice-person-name">Yさん（38歳）</div>
+            <div class="voice-stars" style="color:#f4b400;font-size:13px;letter-spacing:2px;">★★★★★</div>
+          </div>
+        </div>
+        <h4 class="voice-title">30代後半でドレスを着るのを諦めていましたが。</h4>
+        <p class="voice-text">
+          30代後半でドレスを着るのは諦めていましたが、Body Nateさんに出会って本気でやろうと決めました。体重も落ちましたが、何よりも姿勢と肩のラインが劇的に変わりました。式当日は本当に美しく撮れて、夫も涙ぐんでくれて。一生の思い出です。
+        </p>
+        <div class="voice-result">−7kg / ウエスト−12cm</div>
+      </div>
+
+      <div class="voice-card">
+        <div class="voice-header">
+          <div class="voice-avatar"><img src="sample_img/voice_customer_u.png" alt=""></div>
+          <div>
+            <div class="voice-person-name">Uさん（52歳）</div>
+            <div class="voice-stars" style="color:#f4b400;font-size:13px;letter-spacing:2px;">★★★★★</div>
+          </div>
+        </div>
+        <h4 class="voice-title">50代でも、ここまで変われるのかと驚いています。</h4>
+        <p class="voice-text">
+          慢性の腰痛でもう運動は諦めていました。整体で体を整えてから無理なくトレーニングしてくれるので、私でもしっかり続けられました。体が軽くなり、仕事のパフォーマンスまで上がって。同年代の誰よりも動ける体を手に入れられました。
+        </p>
+        <div class="voice-result">−12kg / ウエスト−14cm</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================
+       スタッフ紹介
+       ================================= -->
+  <section class="staff reveal">
+    <div class="sec-title">
+      <p class="sec-label">OUR STAFF</p>
+      <h2 class="sec-heading">スタッフ紹介</h2>
+    </div>
+
+    <div class="staff-list">
+      <!-- Chief Trainer -->
+      <div class="staff-card">
+        <div class="staff-img">
+          <img src="sample_img/staff_ume_new.jpg" alt="">
+          <div class="staff-role-badge chief">★ CHIEF TRAINER</div>
+          <div class="staff-name-overlay">
+            <div class="staff-role-label">代表 / 理学療法士</div>
+            <div class="staff-name-jp">UME</div>
+          </div>
+        </div>
+        <div class="staff-body">
+          <div class="staff-creds">
+            <span class="staff-cred">国家資格 理学療法士</span>
+            <span class="staff-cred">整体歴10年</span>
+            <span class="staff-cred">指導実績500名+</span>
+            <span class="staff-cred">Body Nate 代表</span>
+          </div>
+          <div class="staff-message">
+            医療現場で多くの方の体を診てきた経験から、「痩せる」と「健康」は両立できると確信しています。年齢や怪我を理由に諦める必要はありません。あなたの体を科学的に評価し、一生モノの体づくりを全力でサポートします。
+          </div>
+        </div>
+      </div>
+
+      <!-- Staff 2 - TENWASHI -->
+      <div class="staff-card">
+        <div class="staff-img">
+          <img src="sample_img/staff_amawashi.png" alt="">
+          <div class="staff-role-badge">TRAINER</div>
+          <div class="staff-name-overlay">
+            <div class="staff-role-label">理学療法士</div>
+            <div class="staff-name-jp">AMAWASHI</div>
+          </div>
+        </div>
+        <div class="staff-body">
+          <div class="staff-creds">
+            <span class="staff-cred">国家資格 理学療法士</span>
+            <span class="staff-cred">整形外科クリニック勤務経験</span>
+            <span class="staff-cred">プロアスリート指導経験</span>
+          </div>
+          <div class="staff-message">
+            整形外科クリニック・病院での勤務経験を経て、プロのスポーツ選手から一般の方まで数多く指導してきました。医療と競技の両面から得た知見を活かし、あなたの体を安全かつ最短ルートで理想へ導きます。
+          </div>
+        </div>
+      </div>
+
+      <!-- Staff 3 - CHISA -->
+      <div class="staff-card">
+        <div class="staff-img">
+          <img src="sample_img/staff_chisa_new.jpg" alt="">
+          <div class="staff-role-badge">TRAINER</div>
+          <div class="staff-name-overlay">
+            <div class="staff-role-label">理学療法士</div>
+            <div class="staff-name-jp">CHISA</div>
+          </div>
+        </div>
+        <div class="staff-body">
+          <div class="staff-creds">
+            <span class="staff-cred">国家資格 理学療法士</span>
+            <span class="staff-cred">整形外科クリニック勤務経験</span>
+            <span class="staff-cred">女性専門指導</span>
+          </div>
+          <div class="staff-message">
+            整形外科クリニック・病院での勤務経験を活かし、女性特有の体の悩みに寄り添った指導を行っています。痛みや不調の原因を医療的視点から見極め、一人ひとりに合わせたオーダーメイドのプログラムをご提案します。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================
+       CTA 5回目
+       ================================= -->
+  <div class="cta-triple">
+    <p class="sub-label">── EXPERT SUPPORT ──</p>
+    <h3 class="title">プロに、<br><span class="gold">あなたの体を任せる。</span></h3>
+    <a href="#trial" class="cta-btn-main">
+      初回体験を予約する
+      <span class="price">¥2,200（税込）/ 60分</span>
+    </a>
+    <div class="cta-row">
+      <a href="#" class="cta-btn-sub cta-btn-line">LINEで予約</a>
+      <a href="#book" class="cta-btn-sub cta-btn-instant">すぐ予約</a>
+    </div>
+    <p class="cta-note">通常 ¥10,000 → 今だけ <span class="em">¥2,200</span></p>
+  </div>
+
+  <!-- =================================
+       アクセス（神戸三宮店）
+       ================================= -->
+  <section class="access reveal">
+    <div class="sec-title on-dark">
+      <p class="sec-label">ACCESS</p>
+      <h2 class="sec-heading">神戸三宮店<br><span class="gold">駅チカでご案内。</span></h2>
+    </div>
+
+    <div class="access-list">
+      <div class="access-item">
+        <div class="access-name">Body Nate 神戸三宮店</div>
+        <div class="access-detail">
+          阪急神戸三宮駅 徒歩5分<br>
+          JR三ノ宮駅 徒歩6分 / 元町駅 徒歩5分
+        </div>
+        <span class="access-tag">駅チカ / 完全個室</span>
+        <a href="https://maps.google.com/?q=神戸三宮" target="_blank" class="access-map-btn">📍 Googleマップで見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================
+       初回体験料金
+       ================================= -->
+  <section class="pricing reveal" id="trial">
+    <div class="sec-title">
+      <p class="sec-label">TRIAL</p>
+      <h2 class="sec-heading">まずは、<br><span class="accent">¥2,200の体験</span>から。</h2>
+    </div>
+
+    <div class="pricing-trial-wrap">
+      <div class="pricing-hot-badge">🔥 今すぐ予約できます</div>
+      <div class="pricing-card pricing-trial">
+        <div class="pricing-header">
+          <span class="pricing-badge">★ LIMITED OFFER ★</span>
+          <div class="pricing-name">初回体験コース</div>
+          <div class="pricing-sub">60分・理学療法士が対応</div>
+        </div>
+        <div class="pricing-body">
+          <div class="pricing-price">
+            <div class="pricing-original">通常価格 ¥10,000</div>
+            <div class="pricing-main">¥2,200<span class="tax">（税込）</span></div>
+            <div class="pricing-note">※ 月5名限定 / 今月のお申込み限定</div>
+          </div>
+          <ul class="pricing-includes">
+            <li>理学療法士による体の評価・カウンセリング</li>
+            <li>姿勢・骨格バランスの診断</li>
+            <li>整体セッション（体験版）</li>
+            <li>パーソナルトレーニング体験</li>
+            <li>3ヶ月プログラムのご案内</li>
+            <li>勧誘一切なし・その場で決めなくてOK</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3ヶ月プログラム -->
+    <div class="pricing-card">
+      <div class="pricing-header">
+        <span class="pricing-badge">★ MOST POPULAR ★</span>
+        <div class="pricing-name">ボディメイク3ヶ月メソッド</div>
+        <div class="pricing-sub">理学療法士監修・完全オーダーメイド</div>
+      </div>
+      <div class="pricing-body">
+        <div class="pricing-price">
+          <div class="pricing-original">通常価格 ¥298,000</div>
+          <div class="pricing-main">¥119,800<span class="tax">（税込）</span></div>
+          <div class="pricing-note">★ 8周年記念割引 ※ 分割払い対応</div>
+        </div>
+        <ul class="pricing-includes">
+          <li>初回カウンセリング＆体の科学的評価</li>
+          <li>整体セッション（月4回・全12回）</li>
+          <li>パーソナルトレーニング（月4回・全12回）</li>
+          <li>食事指導・LINEサポート</li>
+          <li>体組成・姿勢データの定期測定</li>
+          <li>完全個室・マンツーマン対応</li>
+          <li>3ヶ月間、無制限のLINE質問対応</li>
+          <li>8周年記念特別価格</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================
+       CTA 6回目
+       ================================= -->
+  <div class="cta-triple" id="book">
+    <p class="sub-label">── BOOK NOW ──</p>
+    <h3 class="title">今すぐ、<br><span class="gold">予約する。</span></h3>
+    <a href="#" class="cta-btn-main">
+      初回体験を予約する
+      <span class="price">¥2,200（税込）/ 60分</span>
+    </a>
+    <div class="cta-row">
+      <a href="#" class="cta-btn-sub cta-btn-line">LINEで予約</a>
+      <a href="#" class="cta-btn-sub cta-btn-instant">予約ページへ</a>
+    </div>
+    <p class="cta-note"><span class="em">月5名限定</span> / 勧誘一切なし</p>
+  </div>
+
+  <!-- =================================
+       FAQ
+       ================================= -->
+  <section class="faq reveal">
+    <div class="sec-title">
+      <p class="sec-label">FAQ</p>
+      <h2 class="sec-heading">よくある<br><span class="accent">ご質問</span></h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item open">
+        <div class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">運動初心者でも大丈夫ですか？</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a">はい、お客様の9割が運動初心者からスタートされています。理学療法士があなたの体に合わせて、無理なく進められるプログラムを組みますのでご安心ください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">50代・60代でも変われますか？</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a">もちろん可能です。実際に50代・60代のお客様も多く、みなさま満足いく結果を出されています。年齢に合わせた安全なメソッドで指導します。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">膝や腰が痛いのですが通えますか？</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a">理学療法士が対応しますので、むしろ医療的な視点で痛みの原因から改善していきます。整形外科医との連携も可能です。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">本当に3ヶ月で結果が出ますか？</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a">プログラム通りに通っていただければ、ほぼ全員が目に見える変化を実感されています。理学療法士が科学的に体を評価し、あなただけのプログラムを組むので安心です。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">食事制限は厳しいですか？</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a">無理な食事制限はいたしません。外食や飲み会も楽しめるよう、一生続けられる食事指導を心がけています。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">仕事が忙しいのですが続けられますか？</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a">完全予約制ですので、お仕事に合わせて柔軟に予約調整できます。平日夜・土日も対応しています。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">体験だけでも大丈夫ですか？</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a">もちろんOKです。体験後の強引な勧誘は一切いたしません。じっくりご検討いただけます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">分割払いはできますか？</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a">各種クレジットカード・分割払いに対応しています。月々¥16,500〜お支払いいただけます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">男性も通えますか？</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a">申し訳ございません、現在は女性専用となっております。男性の方はご紹介という形で承っております。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">駐車場はありますか？</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a">和歌山店は駐車場完備です。神戸三宮店・京都店は近隣のコインパーキングをご利用ください。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================
+       最終CTA
+       ================================= -->
+  <section class="final">
+    <div class="final-hero">
+      <img src="sample_img/real_bridal_sunset.jpg" alt="">
+      <div class="final-hero-diag">月5名限定</div>
+      <div class="final-hero-text">
+        <p class="label">── LAST MESSAGE ──</p>
+        <h2>3ヶ月後のあなたへ、<br><span class="gold">最初の一歩を。</span></h2>
+        <p>まずは¥2,200の体験から、<br>未来を変えていきましょう。</p>
+      </div>
+    </div>
+
+
+    <!-- 最終CTA -->
+    <div class="cta-triple on-dark">
+      <p class="sub-label">── FINAL STEP ──</p>
+      <h3 class="title">さあ、<br><span class="gold">最初の一歩を。</span></h3>
+      <a href="#" class="cta-btn-main">
+        初回体験を予約する
+        <span class="price">¥2,200（税込）/ 60分</span>
+      </a>
+      <div class="cta-row">
+        <a href="#" class="cta-btn-sub cta-btn-line">LINEで予約</a>
+        <a href="#" class="cta-btn-sub cta-btn-instant">予約ページへ</a>
+      </div>
+      <p class="cta-note"><span class="em">月5名限定</span> / 完全予約制 / 勧誘一切なし</p>
+    </div>
+
+  </section>
+
+  <!-- =================================
+       他の店舗（最後に表示）
+       ================================= -->
+  <section class="access">
+    <div class="sec-title on-dark">
+      <p class="sec-label">OTHER STORES</p>
+      <h2 class="sec-heading">その他の<br><span class="gold">店舗のご案内</span></h2>
+    </div>
+
+    <div class="access-list">
+      <div class="access-item">
+        <div class="access-name">Body Nate 京都店</div>
+        <div class="access-detail">
+          阪急烏丸駅 徒歩7分<br>
+          地下鉄四条駅 徒歩8分
+        </div>
+        <span class="access-tag">駅チカ / 完全個室</span>
+        <a href="https://maps.google.com/?q=京都四条烏丸" target="_blank" class="access-map-btn">📍 Googleマップで見る</a>
+      </div>
+      <div class="access-item">
+        <div class="access-name">Body Nate 和歌山店</div>
+        <div class="access-detail">
+          JR和歌山駅 徒歩10分<br>
+          駐車場完備
+        </div>
+        <span class="access-tag">駐車場あり / 完全個室</span>
+        <a href="https://maps.google.com/?q=和歌山駅" target="_blank" class="access-map-btn">📍 Googleマップで見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- スティッキーCTA（3ボタン） -->
+  <div class="sticky-cta">
+    <a href="#" class="line">LINEで<span class="small">予約</span></a>
+    <a href="#trial" class="trial">体験 ¥2,200<span class="small">はこちら</span></a>
+    <a href="#book" class="book">すぐ<span class="small">予約</span></a>
+  </div>
+
+  <script>
+    // ==========================================
+    // FAQ Accordion
+    // ==========================================
+    document.querySelectorAll('.faq-item').forEach(function(item) {
+      item.querySelector('.faq-q').addEventListener('click', function() {
+        var isOpen = item.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(function(el) {
+          el.classList.remove('open');
+        });
+        // Toggle clicked
+        if (!isOpen) {
+          item.classList.add('open');
+        }
+      });
+    });
+
+    // ==========================================
+    // Scroll Reveal (Intersection Observer)
+    // ==========================================
+    var revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.08,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    document.querySelectorAll('.reveal').forEach(function(el) {
+      revealObserver.observe(el);
+    });
+
+    // ==========================================
+    // Number Counter Animation
+    // ==========================================
+    function animateCounter(el, from, to, suffix, duration) {
+      var start = null;
+      var step = function(timestamp) {
+        if (!start) start = timestamp;
+        var progress = Math.min((timestamp - start) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(from + (to - from) * eased) + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    }
+
+    var counterObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var nums = entry.target.querySelectorAll('.trust-num');
+          nums.forEach(function(num) {
+            var text = num.textContent.trim();
+            // Skip text-only counters
+            if (text === '全年齢' || text === '★4.9' || text.includes('徒歩')) return;
+            if (text.includes('店舗')) {
+              animateCounter(num.querySelector
+                ? num : num, 0, 3, '店舗', 1200);
+            }
+          });
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    var trustSection = document.querySelector('.trust');
+    if (trustSection) counterObserver.observe(trustSection);
+
+    // ==========================================
+    // Sticky CTA show/hide on scroll
+    // ==========================================
+    var stickyCta = document.querySelector('.sticky-cta');
+    window.addEventListener('scroll', function() {
+      var currentScrollY = window.scrollY;
+      if (currentScrollY > 200) {
+        stickyCta.style.bottom = '0';
+        stickyCta.style.opacity = '1';
+      } else {
+        stickyCta.style.bottom = '-100px';
+        stickyCta.style.opacity = '0';
+      }
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
