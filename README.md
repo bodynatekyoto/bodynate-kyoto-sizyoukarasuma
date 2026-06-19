@@ -1,11 +1,11 @@
-# Body Nate ランディングページ
+# 四十肩・五十肩 専門整体 Quickリハ｜教育型LP
 
-理学療法士が診る、3ヶ月集中ボディメイクのランディングページ。
+四十肩・五十肩 専門整体「Quickリハ」の縦型ロング教育型ランディングページ。
 
 - 本番URL: https://bodynate-kyoto-sizyoukarasuma.pages.dev/
 - メインLP: `index.html`
-- スライド版: `lp_slides_wine.html`
-- 画像: `sample_img/`
+- プライバシーポリシー: `privacy.html`
+- 画像: `images/`
 
 ## デプロイ
 
